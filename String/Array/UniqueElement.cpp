@@ -1,24 +1,38 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int a[100];
+    int s1[100];
     int i,j, n, c=0;
-    cout << "Enter the no element";
-    cin >> n;
+    cout << "Enter the no element - ";
+    cin >>n;
+    cout << "Enter the element";
     for ( i = 0; i < n; i++)
     {
-        cin >> a[i];
+       cin >> s1[n];
     }
-    for ( j = 0; j < n; j++)
-    {
-       if (i != j)
+    
+
+for ( i = 0; i < n; i++)
+{
+    c=0;
+   for ( j = 0; j <n; i++)
+   {
+       if (i !=j)
        {
-           if (a[i] == a[j])
-           {
-               c++;
-           } 
-       }
-       cout << c;  
-    }
-      
+          if (s1[i] == s1[j])
+          {
+              c++;
+          }
+          
+       }    
+   }
+   if (c==0)
+   {
+       cout << s1[i] <<endl;
+   }
+   cout << c;
+   
+}
+
+     
 }
