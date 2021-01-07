@@ -5,13 +5,13 @@ int main(){
     int i,j, n, c=0;
     cout << "Enter the no element - ";
     cin >>n;
-    cout << "Enter the element";
+    cout << "Enter the"<< n << "element";
     for ( i = 0; i < n; i++)
     {
        cin >> s1[n];
     }
     
-
+cout << "unique elements are : ";
 for ( i = 0; i < n; i++)
 {
     c=0;
@@ -26,12 +26,7 @@ for ( i = 0; i < n; i++)
           
        }    
    }
-   if (c==0)
-   {
-       cout << s1[i] <<endl;
-   }
-   cout << c;
-   
+   return c;
 }
 
      
